@@ -1,0 +1,206 @@
+body{
+    background-color: rgb(214, 208, 208);
+    padding : 0;
+    margin : 0;
+}
+#navbar-top{
+    font-size: 20px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 100%;
+    padding : 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+#navbar-top ul{
+    display : flex;
+    align-items: center;
+    list-style-type: none;
+}
+#navbar-top ul li a{
+    display : block;
+    color : black;
+    padding : 15px;
+    text-decoration: none;
+}
+#openpopup{
+    color : white;
+    background-color: grey;
+    list-style-type: none;
+    width : 70px;
+    height: 30px;
+    padding : 0;
+    margin-right : 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+#sidebar{
+    display : block;
+    width : 400px;
+    height: 100vh;
+    background-color: aliceblue;
+    top : 0;
+    left : -400px;
+    position : fixed;
+    text-align: center;
+}
+#backgroundpop #login-popup{
+    align-items: center;
+    width : 600px;
+    height: 600px;
+    background-color: white;
+    position : absolute;
+    border-radius: 10px;
+    left : 50%;
+    top : 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    transition: 0.5ms;
+}
+#close-popup{
+    top : 0px;
+    right: 0px;
+    padding : 0;
+    margin : 0;
+    position: fixed;
+    cursor: pointer;
+}
+#login-inside{
+    display: block;
+    text-align: center;
+}
+#background-popup{
+    width : 100%;
+    height: 100vh;
+    top : 0px;
+    left : 0px;
+    position: fixed;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: none;
+    transition: 0.5ms;
+}
+#background{
+    width : 100%;
+    height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    position : fixed;
+    top : 0;
+    left : 400px;
+    display : none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.calculator {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.calculator input[type="button"] {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.calculator input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+#email{
+    width : 500px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+    display: block;
+}
+#password{
+    width : 500px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+    
+    
+}
+#letteremail{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    left : 10%;
+    top : 180px;
+    
+}
+#letterpassword{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    left : 0px;
+    left : 10%;
+    top : 290px;
+}
+#data .folder-email,.folder-password{
+    padding-top : 60px;
+    display: flex;
+    justify-content: center;
+}
+#Save{
+    margin-top : 60px;
+    width : 450px;
+    height: 70px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+#displaydata{
+    width: 100%;
+    height: 100% auto;
+    background-color: white;
+    margin-top : 20px;
+    font-size: 20px;
+    display : flex;
+    padding : 0;
+    border-radius: 10px;
+}
+#displaydata li{
+    list-style-type: none;
+    display: block;
+}
+@media(min-width : 360px){
+    #navbar-top ul{
+        display: none;
+    }
+    #navbar-top{
+        display: flex;
+        align-items: center;
+        
+    }
+    #openpopup{
+        margin-right : 10px;
+    }
+    #open-sidebar{
+        margin-left : 10px;
+    }
+    #backgroundpop #login-popup{
+        width : 300px;
+    }
+    #Save{
+        width : 200px;
+    }
+    #password,#email{
+        width : 250px;
+    }
+}
